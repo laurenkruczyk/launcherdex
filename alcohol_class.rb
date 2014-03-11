@@ -1,6 +1,6 @@
 class alcohol
 
-def initialize(name, size)
+def initialize(name, size, percent_alcohol,)
   @name = name
   @size = size
 
