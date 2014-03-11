@@ -24,4 +24,14 @@ or
 IDEAS:
 - add cost calculator - based on how much you want to spend
 - link it to different places in Boston & their drink's menus
--
+-list available drink sizes
+
+Sources:
+
+- http://celtickane.com/projects/blood-alcohol-content-bac-calculator/
+   -similar project
+- http://www.globalrph.com/blood_alcohol_calculator.htm
+   - calculation information
+
+- http://www.brad21.org/bac_charts.html
+  - has blood alchohol level info
