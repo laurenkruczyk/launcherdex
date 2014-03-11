@@ -1,0 +1,3 @@
+- add cost calculator - based on how much you want to spend
+- link it to different places in Boston & their drink's menus
+-
