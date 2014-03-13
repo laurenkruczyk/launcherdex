@@ -14,9 +14,9 @@ post '/drink' do
   CSV.open('data_drink.csv', 'a+') do |file|
     file.puts(person_info)
   end
-  @drink_data = CSV.readline('data_drink.csv')
+  @drink_data = CSV.readlines('data_drink.csv')
 
-
+  redirect '/'
   erb :how_drunk
 end
 
