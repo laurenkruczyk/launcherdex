@@ -25,7 +25,7 @@ IDEAS:
 - add cost calculator - based on how much you want to spend
 - link it to different places in Boston & their drink's menus
 -list available drink sizes
-
+-make a dropdown menu where the user can choose the hour they last ate/time they started drinking.
 Sources:
 
 - http://celtickane.com/projects/blood-alcohol-content-bac-calculator/
