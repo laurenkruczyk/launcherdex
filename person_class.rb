@@ -6,18 +6,20 @@ class Person
     @hours_since_meal = hours_since_meal
     @hours_since_first_drink = hours_since_first_drink
     @gender = gender
-    @r = 0
+    @alcohol_distribution_ratio = 0
   end
 
+
+#might want to have this as a pull down menu or a button selector rather than relying on user input
   def gender
     if @gender == "male"
-      @r = 0.73
+      @alcohol_distribution_ratio = 0.73
     else
-      @r = 0.66
+      @alcohol_distribution_ratio = 0.66
   end
 
   def bac_level
-    bac = (A x 5.14/W x r) – .015 x @hours_since_first_drink
+    bac = (liquid_oz_alcohol x 5.14/@weight x alcohol_distribution_ratio) – .015 x @hours_since_first_drink
   end
 
 end
