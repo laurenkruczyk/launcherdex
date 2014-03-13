@@ -1,4 +1,4 @@
-class alcohol
+class Alcohol
 
 def initialize(name, size, percent_alcohol)
   @name = name

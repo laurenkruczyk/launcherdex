@@ -14,11 +14,12 @@ class Person
       @r = 0.73
     else
       @r = 0.66
+    end
   end
 
-  def bac_level
-    bac = (A x 5.14/W x r) – .015 x @hours_since_first_drink
-  end
+  # def bac_level
+  #   bac = (A x 5.14 / W x r) – 0.015 x @hours_since_first_drink
+  # end
 
 end
 #% BAC = (A x 5.14/W x r) – .015 x H
