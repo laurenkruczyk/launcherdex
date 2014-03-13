@@ -1,8 +1,8 @@
 require 'sinatra'
 require 'csv'
 require 'pry'
-require_relative 'lib/person_class'
-require_relative 'lib/alcohol_class'
+require_relative 'lib/person'
+require_relative 'lib/alcohol'
 
 get '/' do
   @drink_data = CSV.readlines('data_drink.csv')
@@ -10,7 +10,10 @@ get '/' do
 end
 
 post '/drink' do
-  person_info = params[:'name'], params[:'weight'], params[:'gender'], params[:'hours_since_first_drink']
+
+  person_info = [params[:user_name], params[:user_weight], params[:sex], params[:hours_since_meal], params[:hours_since_first_drink]]
+
+  #binding.pry
   CSV.open('data_drink.csv', 'a+') do |file|
     file.puts(person_info)
   end

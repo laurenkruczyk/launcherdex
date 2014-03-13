@@ -1,44 +1,95 @@
 <!doctype html>
 <html lang='en'>
 <head>
-<title>Drinkdex</title>
+  <title>Drinkdex</title>
   <link rel="stylesheet" href="home.css">
 </head>
 
 <body>
-<h1>DRINKDEX</h1>
+  <h1>DRINKDEX</h1>
 
-<ul>
-<li><a href="http://localhost:9393/">HOME</a></li>
-<li><a href="http://localhost:9393/drink">DRINKS</a></li>
-<li><a href="http://localhost:9393/about">ABOUT</a></li>
-</ul>
+  <ul>
+    <li><a href="http://localhost:9393/">HOME</a></li>
+    <li><a href="http://localhost:9393/drink">DRINKS</a></li>
+    <li><a href="http://localhost:9393/about">ABOUT</a></li>
+  </ul>
 
-<form action="/drink" method="post">
-<label for="name">Name:</label>
-<input type="text" id="name" name="user_name" maxlength="45">
-<br>
-<label for="weight">Weight:</label>
-<input type="text" id="weight" name="user_weight" maxlength="4">
-<br>
-<input type="radio" name="sex" value="male">Male
-<input type="radio" name="sex" value="female">Female
-<br>
-<label for="hours_since_meal">Hours Since Eating:</label>
-<input type="text" id="hours_eat" name="hours_since_eating" maxlength="3">
-<br>
-<label for="hours_since_first_drink"> Hours Since First Drink:</label>
-<input type="text" id="hours_drink" name="hours_since_drinking" maxlength="3">
+  <form action="/drink" method="post">
+    <label for="name">Name:</label>
+    <input type="text" name="user_name" maxlength="45">
+    <br>
+    <label for="weight">Weight:</label>
+    <input type="text" id="weight" name="user_weight" maxlength="4">
+    <br>
+    <input type="radio" name="sex" value="male">Male
+    <input type="radio" name="sex" value="female">Female
+    <br>
+    <label for="hours_since_meal">Most Recent Meal Time:</label>
+    <select name="hours_since_meal">
+      <option value=0>Midnight</option>
+      <option value=1>1AM</option>
+      <option value=2>2AM</option>
+      <option value=3>3AM</option>
+      <option value=4>4AM</option>
+      <option value=5>5AM</option>
+      <option value=6>6AM</option>
+      <option value=7>7AM</option>
+      <option value=8>8AM</option>
+      <option value=9>9AM</option>
+      <option value=10>10AM</option>
+      <option value=11>11AM</option>
+      <option value=12>12PM</option>
+      <option value=13>1PM</option>
+      <option value=14>2PM</option>
+      <option value=15>3PM</option>
+      <option value=16>4PM</option>
+      <option value=17>5PM</option>
+      <option value=18>6PM</option>
+      <option value=19>7PM</option>
+      <option value=20>8PM</option>
+      <option value=21>9PM</option>
+      <option value=22>10PM</option>
+      <option value=23>11PM</option>
+    </select>
+    <br>
+    <label for="hours_since_first_drink">First Drink Time:</label>
+    <select name="hours_since_first_drink">
+          <option value=0>Midnight</option>
+      <option value=1>1AM</option>
+      <option value=2>2AM</option>
+      <option value=3>3AM</option>
+      <option value=4>4AM</option>
+      <option value=5>5AM</option>
+      <option value=6>6AM</option>
+      <option value=7>7AM</option>
+      <option value=8>8AM</option>
+      <option value=9>9AM</option>
+      <option value=10>10AM</option>
+      <option value=11>11AM</option>
+      <option value=12>12PM</option>
+      <option value=13>1PM</option>
+      <option value=14>2PM</option>
+      <option value=15>3PM</option>
+      <option value=16>4PM</option>
+      <option value=17>5PM</option>
+      <option value=18>6PM</option>
+      <option value=19>7PM</option>
+      <option value=20>8PM</option>
+      <option value=21>9PM</option>
+      <option value=22>10PM</option>
+      <option value=23>11PM</option>
+    </select>
+    <br>
 
 
 
-<input type = "submit"/>
-</form>
+    <input type = "submit"/>
+  </form>
 
-<div>
+  <div>
 
 
-</div>
+  </div>
 
 
 </body>
