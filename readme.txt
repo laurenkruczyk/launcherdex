@@ -35,3 +35,9 @@ Sources:
 
 - http://www.brad21.org/bac_charts.html
   - has blood alchohol level info
+
+- http://www.ctduiattorney.com/calculating-bac/
+  - Contains formula for blood alcohol level
+
+- http://en.wikipedia.org/wiki/Blood_alcohol_content
+  - tells you how drunk you are based on your blood alchohol level.

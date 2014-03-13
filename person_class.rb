@@ -1,12 +1,47 @@
 class Person
 
-def initialize(name,height,weight,hours_since_meal, hours_since_first_drink)
-  @name = name
-  @height = height
-  @weight = weight
-  @hours_since_meal = hours_since_meal
-  @hours_since_first_drink = hours_since_first_drink
+  def initialize(name,weight, gender, hours_since_meal, hours_since_first_drink)
+    @name = name
+    @weight = weight
+    @hours_since_meal = hours_since_meal
+    @hours_since_first_drink = hours_since_first_drink
+    @gender = gender
+    @r = 0
+  end
+
+  def gender
+    if @gender == "male"
+      @r = 0.73
+    else
+      @r = 0.66
+  end
+
+  def bac_level
+    bac = (A x 5.14/W x r) – .015 x @hours_since_first_drink
+  end
+
 end
+#% BAC = (A x 5.14/W x r) – .015 x H
+# "A" is the total number of liquid ounces of alcohol consumed
+# by the person since the commencement of drinking.
 
 
-end
+#  This figure is ascertained by multiplying the number of liquid ounces of
+#  alcoholic beverages consumed by the percentage of alcohol in
+#  the beverage. For example, a typical bottle of regular beer
+#  contains .60 liquid ounces of alcohol (12 oz. X 5%). A typical
+#  glass of table wine contains .60 liquid ounces of alcohol (5 oz. X 12%).
+#   And, most hard liquors contain 40 per cent alcohol by volume with
+#   a typical size of drink being 1.25 ounces and so a typical shot of
+#   hard liquor contains .50 ounces of alcohol (1.25 oz x 40%).
+
+# “W” is for weight of the person in pounds
+
+# “r” in the alcohol distribution ratio which for men is .73 and for women is .66
+
+# “H” is the period in hours during which alcohol was eliminated
+# from the blodstream and this is usually the total number of
+# hours between commencement of drinking and the time the BAC
+# calculation is made.
+
+
