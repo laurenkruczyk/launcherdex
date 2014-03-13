@@ -1,8 +1,8 @@
 require 'sinatra'
 require 'csv'
 require 'pry'
-require_relative 'person_class'
-require_relative 'alcohol_class'
+require_relative 'lib/person_class'
+require_relative 'lib/alcohol_class'
 
 get '/' do
 
