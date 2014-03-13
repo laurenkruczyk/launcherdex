@@ -1,28 +1,48 @@
 class Person
 
-  def initialize(name,weight, gender, hours_since_meal, hours_since_first_drink)
+  def initialize(name, weight, gender, hours_since_meal, hours_since_first_drink)
     @name = name
     @weight = weight
     @hours_since_meal = hours_since_meal
     @hours_since_first_drink = hours_since_first_drink
     @gender = gender
-    @alcohol_distribution_ratio = 0
   end
+
+  attr_reader :name
+  attr_reader :weight
+  attr_reader :hours_since_meal
+  attr_reader :hours_since_first_drink
+  attr_reader :gender
 
 
 #might want to have this as a pull down menu or a button selector rather than relying on user input
-  def gender
-    if @gender == "male"
-      @alcohol_distribution_ratio = 0.73
-    else
-      @alcohol_distribution_ratio = 0.66
-  end
+  # def gender
+  #   # if @gender == "male"
+  #   #   @alcohol_distribution_ratio = 0.73
+  #   # else
+  #   #   @alcohol_distribution_ratio = 0.66
+
+  # end
 
   def bac_level
-    bac = (liquid_oz_alcohol x 5.14/@weight x alcohol_distribution_ratio) – .015 x @hours_since_first_drink
+    # bac = (liquid_oz_alcohol x 5.14/@weight x alcohol_distribution_ratio) – .015 x @hours_since_first_drink
+  end
+
+  def intoxication_level
   end
 
 end
+
+
+
+
+
+
+
+
+
+
+
 #% BAC = (A x 5.14/W x r) – .015 x H
 # "A" is the total number of liquid ounces of alcohol consumed
 # by the person since the commencement of drinking.
