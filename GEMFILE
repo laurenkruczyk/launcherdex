@@ -1,0 +1,6 @@
+source 'https://rubygems.com'
+
+gem 'pry'
+gem 'rspec'
+gem 'shotgun'
+gem 'sinatra'
