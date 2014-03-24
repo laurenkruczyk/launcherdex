@@ -11,7 +11,7 @@ end
 
 post '/drink' do
 
-  person_info = [params[:user_name], params[:user_weight], params[:sex], params[:hours_since_meal], params[:hours_since_first_drink]]
+  @person_info = [params[:user_name], params[:user_weight], params[:sex], params[:hours_since_meal], params[:hours_since_first_drink]]
 
   #binding.pry
   CSV.open('data_drink.csv', 'a+') do |file|
@@ -23,6 +23,8 @@ post '/drink' do
 end
 
 get '/:url_name' do
-  @drink_class_holder = Person.new(params[])
+  @drink_class_holder = Person.new(@person_info)
+
+  erb :drink
 end
 

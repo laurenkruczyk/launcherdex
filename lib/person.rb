@@ -1,33 +1,39 @@
 class Person
 
-  def initialize(name, weight, gender, hours_since_meal, hours_since_first_drink)
+  def initialize(person_info)
+    @person_info = person_info
     @name = name
     @weight = weight
     @hours_since_meal = hours_since_meal
     @hours_since_first_drink = hours_since_first_drink
     @gender = gender
+    @alcohol_distribution_ratio
   end
 
-  attr_reader :name
   attr_reader :weight
   attr_reader :hours_since_meal
   attr_reader :hours_since_first_drink
   attr_reader :gender
+  attr_reader :liquid_oz_alcohol
+def name
+  @person_info[0]
+end
 
-
+#[params[:user_name], params[:user_weight], params[:sex], params[:hours_since_meal], params[:hours_since_first_drink]]
 #might want to have this as a pull down menu or a button selector rather than relying on user input
 
-  # def gender
-  #   # if @gender == "male"
-  #   #   @alcohol_distribution_ratio = 0.73
-  #   # else
-  #   #   @alcohol_distribution_ratio = 0.66
+  def gender
+    if @gender == "male"
+      @alcohol_distribution_ratio = 0.73
+    else
+      @alcohol_distribution_ratio = 0.66
+        end
+   end
+
+  # def bac_level
+  #  (@liquid_oz_alcohol x 5.14 / @weight x @alcohol_distribution_ratio) – 0.015 x @hours_since_first_drink
 
   # end
-
-  def bac_level
-    # bac = (liquid_oz_alcohol x 5.14/@weight x alcohol_distribution_ratio) – .015 x @hours_since_first_drink
-  end
 
   def intoxication_level
   end

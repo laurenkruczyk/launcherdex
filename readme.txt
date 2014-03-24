@@ -1,10 +1,10 @@
 The drinkex takes in important, relevant information about you including
-- height
 - weight
 - gender
 - number of drinks per week (approx)
 - IQ (just kidding)
 - hours since most recent meal
+-User authentication
 
 as well as information about
 
@@ -25,7 +25,10 @@ IDEAS:
 - add cost calculator - based on how much you want to spend
 - link it to different places in Boston & their drink's menus
 -list available drink sizes
--make a dropdown menu where the user can choose the hour they last ate/time they started drinking.
+- make it so that a user can add different types of drinks, asides from just the ones included
+- make it so that a user can make a profile and track their drinking information
+-
+
 Sources:
 
 - http://celtickane.com/projects/blood-alcohol-content-bac-calculator/
